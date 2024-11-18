@@ -1,0 +1,58 @@
+{
+  "service": {
+    "service": "nextjs-app",
+    "serviceObject": {
+      "name": "nextjs-app"
+    },
+    "provider": {
+      "name": "aws",
+      "runtime": "nodejs16.x",
+      "region": "us-east-1",
+      "stage": "dev",
+      "versionFunctions": true,
+      "compiledCloudFormationTemplate": {
+        "AWSTemplateFormatVersion": "2010-09-09",
+        "Description": "The AWS CloudFormation template for this Serverless application",
+        "Resources": {},
+        "Outputs": {
+          "ServerlessDeploymentBucketName": {
+            "Value": "serverless-framework-deployments-us-east-1-5edca9cb-f3ed",
+            "Export": {
+              "Name": "sls-nextjs-app-dev-ServerlessDeploymentBucketName"
+            }
+          }
+        }
+      }
+    },
+    "plugins": [
+      "@sls-next/serverless-component"
+    ],
+    "pluginsData": {},
+    "functions": {},
+    "configValidationMode": "warn",
+    "serviceFilename": "serverless.yml",
+    "initialServerlessConfig": {
+      "org": "cmaproject",
+      "app": "nextblog",
+      "service": "nextjs-app",
+      "provider": {
+        "$ref": "$[\"service\"][\"provider\"]"
+      },
+      "plugins": {
+        "$ref": "$[\"service\"][\"plugins\"]"
+      },
+      "nextamplified": {
+        "component": "@sls-next/serverless-component@1.18.0"
+      }
+    },
+    "app": "nextblog",
+    "appId": null,
+    "org": "cmaproject",
+    "orgId": null,
+    "layers": {}
+  },
+  "package": {
+    "artifactDirectoryName": "serverless/nextjs-app/dev/1731308878420-2024-11-11T07:07:58.420Z",
+    "artifact": ""
+  }
+}

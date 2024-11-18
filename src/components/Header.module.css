@@ -1,0 +1,22 @@
+/* src/components/Header.module.css */
+.header {
+  background-color: #333;
+  color: grey;
+  padding: 10px 20px;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navList li {
+  padding: 0 15px;
+}
+
+.navList a {
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+}

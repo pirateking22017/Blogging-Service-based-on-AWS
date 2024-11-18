@@ -1,0 +1,23 @@
+input CreatePostInput {
+  title: String!
+  content: String!
+  username: String!  
+  coverImage: String
+}
+
+type Post @model
+  @auth(rules: [
+    { allow: owner, ownerField: "username", operations: [create, update, delete] },
+    { allow: public, operations: [create, read, update, delete] }
+  ])
+{
+  id: ID!
+  title: String!
+  content: String!
+  username: String! @index(name: "byUsername", queryField: "postsByUsername")
+  createdAt: AWSDateTime!
+  coverImage: String
+}
+
+
+

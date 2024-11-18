@@ -1,0 +1,93 @@
+{
+  "/home/ctrlaltdel/Desktop/miniproject_cma/amplify-next": {
+    "versionSfCore": null,
+    "versionFramework": "4.4.7",
+    "isWithinCompose": false,
+    "isCompose": false,
+    "composeOrgName": null,
+    "composeResolverProviders": {
+      "default-aws-credential-resolver": "<REDACTED>"
+    },
+    "composeServiceName": null,
+    "servicePath": "/home/ctrlaltdel/Desktop/miniproject_cma/amplify-next",
+    "serviceConfigFileName": "serverless.yml",
+    "service": {
+      "org": "cmaproject",
+      "app": "nextblog",
+      "service": "nextjs-app",
+      "provider": {
+        "name": "aws",
+        "runtime": "nodejs16.x",
+        "region": "us-east-1",
+        "stage": "dev",
+        "versionFunctions": true,
+        "compiledCloudFormationTemplate": {
+          "AWSTemplateFormatVersion": "2010-09-09",
+          "Description": "The AWS CloudFormation template for this Serverless application",
+          "Resources": {},
+          "Outputs": {
+            "ServerlessDeploymentBucketName": {
+              "Value": "serverless-framework-deployments-us-east-1-5edca9cb-f3ed",
+              "Export": {
+                "Name": "sls-nextjs-app-dev-ServerlessDeploymentBucketName"
+              }
+            }
+          }
+        }
+      },
+      "plugins": [
+        "@sls-next/serverless-component"
+      ],
+      "nextamplified": {
+        "component": "@sls-next/serverless-component@1.18.0"
+      }
+    },
+    "serviceRawFile": "org: cmaproject                # Your Serverless Framework organization name\napp: nextblog                   # Your Serverless Framework app name\nservice: nextjs-app              # Name of the service (this could be your Next.js app name)\n\nprovider:\n  name: aws                     # AWS as the cloud provider\n  runtime: nodejs16.x            # Node.js runtime for AWS Lambda\n  region: us-east-1              # AWS region (you can choose another one if needed)\n\nplugins:\n  - \"@sls-next/serverless-component\" # Use the Next.js Serverless component for deployment\n\nnextamplified:\n  component: \"@sls-next/serverless-component@1.18.0\"   # Version of the serverless component\n\n",
+    "command": [
+      "deploy"
+    ],
+    "options": {
+      "debug": "*"
+    },
+    "error": {
+      "message": "The CloudFormation template is invalid: Template format error: At least one Resources member must be defined.",
+      "stack": "ServerlessError2: The CloudFormation template is invalid: Template format error: At least one Resources member must be defined.\n    at <anonymous> (/home/ctrlaltdel/.serverless/releases/4.4.7/serverless/lib/plugins/aws/deploy/lib/validate-template.js:23:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at aws:deploy:deploy:validateTemplate (/home/ctrlaltdel/.serverless/releases/4.4.7/serverless/lib/plugins/aws/deploy/index.js:207:9)\n    at PluginManager.runHooks (/home/ctrlaltdel/.serverless/releases/4.4.7/serverless/lib/classes/plugin-manager.js:680:9)\n    at PluginManager.invoke (/home/ctrlaltdel/.serverless/releases/4.4.7/serverless/lib/classes/plugin-manager.js:719:9)\n    at PluginManager.spawn (/home/ctrlaltdel/.serverless/releases/4.4.7/serverless/lib/classes/plugin-manager.js:740:5)\n    at PluginManager.runHooks (/home/ctrlaltdel/.serverless/releases/4.4.7/serverless/lib/classes/plugin-manager.js:680:9)\n    at PluginManager.invoke (/home/ctrlaltdel/.serverless/releases/4.4.7/serverless/lib/classes/plugin-manager.js:719:9)\n    at PluginManager.run (/home/ctrlaltdel/.serverless/releases/4.4.7/serverless/lib/classes/plugin-manager.js:768:7)\n    at Serverless.run (/home/ctrlaltdel/.serverless/releases/4.4.7/serverless/lib/serverless.js:221:5)",
+      "code": "INVALID_AWS_CLOUDFORMATION_TEMPLATE"
+    },
+    "params": {},
+    "machineId": "7d8b1aa76875b42237719ce04c273a14",
+    "stage": "dev",
+    "accessKeyV2": "<REDACTED>",
+    "accessKeyV1": "<REDACTED>",
+    "orgId": "df215042-09ec-42c3-8e98-69effc5d0ba7",
+    "orgName": "cmaproject",
+    "userId": "jnpjJh4ZWkgTh9Rxzw",
+    "dashboard": {
+      "isEnabledForService": true,
+      "requiredAuthentication": false,
+      "orgFeaturesInUse": {
+        "providers": false,
+        "monitoring": false
+      },
+      "orgObservabilityIntegrations": null,
+      "serviceAppId": "QVF5Bk44nwr0jyXMHw",
+      "serviceProvider": null,
+      "instanceParameters": null
+    },
+    "userName": "cmaproject",
+    "subscription": null,
+    "userEmail": "amanx.432.kp@gmail.com",
+    "serviceProviderAwsRegion": "us-east-1",
+    "serviceProviderAwsCredentials": "<REDACTED>",
+    "serviceProviderAwsAccountId": "017820701337",
+    "projectType": "traditional",
+    "versionSf": "4.4.7",
+    "serviceProviderAwsCfStackName": "nextjs-app-dev",
+    "serviceUniqueId": null,
+    "serviceProviderAwsCfStackId": null,
+    "serviceProviderAwsCfStackCreated": null,
+    "serviceProviderAwsCfStackUpdated": null,
+    "serviceProviderAwsCfStackStatus": null,
+    "serviceProviderAwsCfStackOutputs": null
+  }
+}

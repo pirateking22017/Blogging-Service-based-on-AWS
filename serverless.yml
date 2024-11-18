@@ -1,0 +1,15 @@
+org: cmaproject                # Your Serverless Framework organization name
+app: nextblog                   # Your Serverless Framework app name
+service: nextjs-app              # Name of the service (this could be your Next.js app name)
+
+provider:
+  name: aws                     # AWS as the cloud provider
+  runtime: nodejs16.x            # Node.js runtime for AWS Lambda
+  region: us-east-1              # AWS region (you can choose another one if needed)
+
+plugins:
+  - "@sls-next/serverless-component" # Use the Next.js Serverless component for deployment
+
+nextamplified:
+  component: "@sls-next/serverless-component@1.18.0"   # Version of the serverless component
+
